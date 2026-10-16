@@ -67,8 +67,8 @@ export const DefaultOrderCard: Story = {
       _id: '32',
       status: 'ready',
       name: 'Начинка',
-      createdAt: '',
-      updatedAt: '',
+      created_at: '',
+      updated_at: '',
       number: 3,
       ingredients: ['Булка', 'Начинка']
     },

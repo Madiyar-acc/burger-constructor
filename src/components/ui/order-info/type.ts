@@ -13,8 +13,8 @@ type TOrderInfo = {
   _id: string;
   status: string;
   name: string;
-  createdAt: string;
-  updatedAt: string;
+  created_at: string;
+  updated_at: string;
   number: number;
   ingredients: string[];
 };

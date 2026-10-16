@@ -63,6 +63,7 @@ body {
 .text {
 	margin: 0;
 	padding: 0;
+    color: white;
 }
 
 .text_type_main-default {

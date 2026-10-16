@@ -12,7 +12,8 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
   price,
   orderModalData,
   onOrderClick,
-  closeOrderModal
+  closeOrderModal,
+  error
 }) => (
   <section className={styles.burger_constructor}>
     {constructorItems.bun ? (
@@ -82,7 +83,7 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
         onClick={onOrderClick}
       />
     </div>
-
+    {error && <p>Ошибка оформления заказа: {error}</p>}
     {orderRequest && (
       <Modal onClose={closeOrderModal} title={'Оформляем заказ...'}>
         <Preloader />

@@ -23,8 +23,8 @@ export const DefaultFeedInfo: Story = {
           _id: '11111',
           status: 'ready',
           name: 'Burger',
-          createdAt: '',
-          updatedAt: '',
+          created_at: '',
+          updated_at: '',
           number: 123,
           ingredients: ['Булка', 'Начинка']
         }

@@ -20,11 +20,20 @@ export type TOrder = {
   _id: string;
   status: string;
   name: string;
-  createdAt: string;
-  updatedAt: string;
+  created_at: string;
+  updated_at: string;
   number: number;
   ingredients: string[];
 };
+// export type TOrder = {
+//   _id: string;
+//   status: string;
+//   name: string;
+//   createdAt: string;
+//   updatedAt: string;
+//   number: number;
+//   ingredients: string[];
+// };
 
 export type TOrdersData = {
   orders: TOrder[];
@@ -35,6 +44,17 @@ export type TOrdersData = {
 export type TUser = {
   email: string;
   name: string;
+};
+export type TAuthResponse = {
+  success: boolean;
+  user: TUser;
+  access_token: string;
+  refresh_token: string;
+};
+
+export type TUserResponse = {
+  success: boolean;
+  user: TUser;
 };
 
 export type TTabMode = 'bun' | 'sauce' | 'main';

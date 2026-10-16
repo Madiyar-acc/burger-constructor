@@ -4,7 +4,6 @@ import { Input, Button } from '@ui-kit';
 import styles from '../common.module.css';
 import { Link } from 'react-router-dom';
 import { PageUIProps } from '../common-type';
-
 export const ForgotPasswordUI: FC<PageUIProps> = ({
   errorText,
   email,
